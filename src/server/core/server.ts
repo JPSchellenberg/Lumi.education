@@ -12,10 +12,6 @@ server.use(bodyParser.urlencoded({
 
 server.use(cookieParser());
 
-server.use(express.static(__dirname + '/public'));
-
-server.get('*', function(req, res){
-  res.sendfile(__dirname + '/public/index.html');
-});
+server.use(express.static(__dirname + '/../public'));
 
 export default server;
