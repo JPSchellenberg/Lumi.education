@@ -11,9 +11,9 @@ module.exports = {
     './src/client/stylesheets/new-age.less'
   ] : ['./src/client/index.ts', './src/client/stylesheets/main.scss', './src/client/stylesheets/new-age.less'],
   output: {
-    path: __dirname + process.env.NODE_ENV === 'development' ? 'build/public' : 'dist/public',
+    path: __dirname + '/build/public',
     publicPath: process.env.NODE_ENV === 'development' ? 'http://localhost:8080/' : '',
-    filename: "lumi.education-spa-client.js",
+    filename: "lumi.js",
   },
 
   // Enable sourcemaps for debugging webpack's output.
@@ -48,7 +48,7 @@ module.exports = {
     ] : []
   },
   devServer: {
-    contentBase: 'dist/public',
+    contentBase: 'build/public',
     port: 8080,
     hot: true,
     historyApiFallback: {
