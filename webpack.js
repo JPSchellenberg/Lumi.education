@@ -64,9 +64,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin([
-      { from: 'lib', to: 'lib' },
       { from: 'img', to: 'img' }
-
     ]),
     new webpack.DefinePlugin({
   'process.env':{
