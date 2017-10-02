@@ -8,7 +8,6 @@ import {
 
 import App 							from '../container/app';
 import Landing 						from '../pages/landing';
-import Alpha 						from '../pages/alpha';
 
 interface IProps {
 	history: any;
@@ -28,7 +27,6 @@ export default class RouterWrapper extends React.Component<IProps, IState> {
 				
 				<Route component={App}>
 					<Route path="/" component={Landing} />
-					<Route path="/alpha" component={Alpha} />
 				</Route>
 
 				<Redirect from="*" to="/" />
