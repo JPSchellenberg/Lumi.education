@@ -38,9 +38,6 @@ export class Navigation extends React.Component<IProps, IState> {
                         <a className="page-scroll" href="/#Features">Features</a>
                     </li>
                     <li>
-                        <a className="page-scroll" href="/#FAQ">FAQ</a>
-                    </li>
-                    <li>
                         <a className="page-scroll" href="/#contact">Kontakt</a>
                     </li>
                 </ul>
