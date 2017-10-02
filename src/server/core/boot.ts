@@ -43,8 +43,8 @@ function boot() {
 
 	boot_api(server);
 
-	const http_server = server.listen(process.env.PORT, function () {
-		express_debug('express-server successfully booted: ' + process.env.PORT );
+	const http_server = server.listen(process.env.PORT || 80, function () {
+		express_debug('express-server successfully booted: ' + process.env.PORT || 80);
 	});
 
 	debug('finished boot-sequence');
