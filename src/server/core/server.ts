@@ -12,6 +12,4 @@ server.use(bodyParser.urlencoded({
 
 server.use(cookieParser());
 
-server.use(express.static(__dirname + '/../public'));
-
 export default server;
